@@ -27,64 +27,64 @@ body {
   --white: hsl(0deg, 0%, 100%);
 }
 
-header {
-  background-color: var(--white);
-  padding-top: 48px;
-  padding-bottom: 48px;
-  color: var(--black);
-  border-bottom: 8px solid var(--gray);
-}
-
-main {
-  background-color: var(--gray-light);
-  padding-top: 48px;
-  padding-bottom: 48px;
-  color: var(--black);
-}
-
-.max-width-wrapper {
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
 h1 {
   font-size: 2rem;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 3rem;
 }
 
-h2 {
-  font-size: 1.5rem;
+header {
+  border-bottom: 8px solid var(--gray-light);
 }
 
 p {
-  padding-bottom: 16px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+.max-width-wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 24px;
+}
+
+.intro-chunk {
+  padding-top: 96px;
+  padding-bottom: 64px;
+  max-width: 415px;
 }
 
 strong {
   color: var(--green);
 }
 
-h2.indented-heading {
-  padding: 16px 32px;
-  margin-top: -8px;
-  margin-left: -32px;
-  max-width: max-content;
-  background-color: var(--gold-light);
-  border-bottom: 8px solid var(--gold-dark);
-}
-
-.intro-chunk,
-.card {
-  padding: 16px;
-}
-
-.intro-chunk {
-  max-width: 350px;
+main {
+  background-color: var(--gray);
+  padding: 64px 0;
 }
 
 .card {
   background-color: var(--white);
-  border-bottom: 8px solid var(--gray);
+  padding: 24px;
+  margin: 0 -24px;
+  border-bottom: 8px solid var(--gray-light);
+}
+
+.indented-heading {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 0;
+  background-color: var(--gold-light);
+  max-width: fit-content;
+  padding: 16px 32px;
+  border-bottom: 8px solid var(--gold-dark);
+  margin-left: -32px;
+  margin-top: -16px;
+  margin-bottom: 1rem;
 }
